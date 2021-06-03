@@ -1,13 +1,13 @@
 <?php
 
-//namespace App\Http\Composers;
+namespace App\Http\Composers;
 
-//use Illuminate\View\View;
+use Illuminate\View\View;
 
-//class HelloComposer
-//{
-  //public function compose(View $view)
-  //{
-    //$view->with('msg', $view->getName() . 'です');
-  //}
-//}
+class HelloComposer
+{
+  public function compose(View $view)
+  {
+    $view->with('msg', $view->getName() . 'です');
+  }
+}
